@@ -1,11 +1,11 @@
-var code = String(1234);
+var code = String(Math.floor(Math.random()*(9999-1000+1)+1000));
 $("#code").html(code);
-var passwd = $("#passwd").val();
 function download() {
     console.log("download")
     window.location.href = "./download/BAD.zip";
 }
 function chack() {
+    var passwd = $("#passwd").val();
     console.log("chack");
     if (passwd === code) {
         $("#t").html("OK!");
