@@ -1,3 +1,6 @@
+body {
+    overflow:hidden;
+}
 .head {
     text-align: center;
     margin-top: -5%;
