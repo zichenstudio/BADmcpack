@@ -10,9 +10,7 @@ html {
     font-family: 'HarmonyOS_Sans', sans-serif;
 }
 body {
-    height:100%;
-    width:100%;
-    overflow:hidden;
+    overflow-x:hidden;
 }
 .head {
     text-align: center;
