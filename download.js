@@ -1,8 +1,15 @@
 var code = String(Math.floor(Math.random()*(9999-1000+1)+1000));
 $("#code").html(code);
+
+var converter = new showdown.Converter(),
+    text      = $('#jj').text(),
+    html      = converter.makeHtml(text);
+
+$('#jj').text(html)
+
 function download() {
     console.log("download")
-    window.location.href = "./download/BAD-0.65.zip";
+    window.location.href = downloadUrl;
 }
 function chack() {
     var passwd = $("#passwd").val();
