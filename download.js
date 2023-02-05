@@ -2,7 +2,7 @@ var code = String(Math.floor(Math.random()*(9999-1000+1)+1000));
 $("#code").html(code);
 function download() {
     console.log("download")
-    window.location.href = "./download/BAD.zip";
+    window.location.href = "./download/BAD-0.65.zip";
 }
 function chack() {
     var passwd = $("#passwd").val();
