@@ -7,19 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>下载:BADMinecarftPack|子沉工作室</title>
     <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./mdtohtml/showdown.min.js"></script>
     <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
+    <h2>版本: <span id="version"></span></h2>
     <p>请输入验证码</p>
     <p>验证码:<span id="code" style="color:#f00;"></span></p>
     <input type="text" id="passwd"><button onclick="chack()">OK</button>
 
     <p id="t"></p>
-    <p>SHA1: ecce9fdce0d1e7d7224f5d13bb4869e5c99dd489</p>
-    <p>SHA256: 6fe342b5beb26a360b984acce04cb4f792bef609a3ddf4ea61b01f1606eb0960</p>
-    <p>
-    <script src="./download.js"></script>
+    <p >简介: <span id="jj"></span></p>
+    <p id="api"></p>
+    <p id="downloadUrl"></p>
+    <script src="./get.js"></script>
+    <!-- <script src="./download.js"></script> -->
 </body>
 
 </html>
