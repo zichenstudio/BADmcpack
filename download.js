@@ -2,10 +2,10 @@ var code = String(Math.floor(Math.random()*(9999-1000+1)+1000));
 $("#code").html(code);
 
 var converter = new showdown.Converter(),
-    text      = $('#jj').text(),
-    html      = converter.makeHtml(text);
+    text = $('#jj').text(),
+    html = converter.makeHtml(text);
 
-$('#jj').text(html)
+$('#jj').html(html)
 
 function download() {
     console.log("download")
