@@ -28,7 +28,12 @@
     <p >简介: <span id="jj">Loading...</span></p>
     <br>
     <hr>
-    <script src="./get.js"></script>
+    <script>
+        function get() {
+            $.getScript('./download.js');
+        }
+        setTimeout("get()",5000);
+    </script>
     <p><a href="https://github.com/ZiChenStudio/BADmcpack/releases">使用Github下载</a></p>
 </body>
 
