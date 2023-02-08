@@ -1,4 +1,4 @@
-var code = String(Math.floor(Math.random()*(9999-1000+1)+1000));
+var code = String(Math.floor(Math.random()*(9007199254740991-1000+1)+1000));
 $("#code").html(code);
 
 var converter = new showdown.Converter(),
