@@ -1,5 +1,7 @@
 var code = String(Math.floor(Math.random()*(9007199254740991-1000+1)+1000));
-$("#code").html(code);
+var code2 = String(Math.floor(Math.random()*(9007199254740991-1000+1)+1000));
+var key = code + code2;
+$("#code").html(key);
 
 var converter = new showdown.Converter(),
     text = $('#jj').text(),
@@ -14,7 +16,7 @@ function download() {
 function chack() {
     var passwd = $("#passwd").val();
     console.log("chack");
-    if (passwd === code) {
+    if (passwd === key) {
         $("#t").html("OK!");
         setTimeout("download()", 3000);
     }
