@@ -1,6 +1,4 @@
-var code = String(Math.floor(Math.random()*(9007199254740991-1000+1)+1000));
-var code2 = String(Math.floor(Math.random()*(9007199254740991-1000+1)+1000));
-var key = code + code2;
+var key = String(Math.floor(Math.random()*(999999-100000+1)+100000));
 $("#code").html(key);
 
 var converter = new showdown.Converter(),
