@@ -5,16 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./web/index.css">
+    <style>
+    body {
+        overflow-x:hidden;
+    }
+    .body {
+        margin-left: 5%;
+        margin-right: 20%;
+    }
+    a:link {
+        color: #000000;
+        text-decoration: underline
+    }
+    .jt p {
+        text-align: center;
+    }
+    a:visited {
+        color: #000000;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: #27DCE2;
+        text-decoration: none;
+    }
+    a:active {
+        color: #27DCE2;
+        text-decoration: underline;
+    }
+    /* 回到顶部按钮开始 */
+    .up{
+        float: right;
+        position: fixed;
+        height: 100px;  
+        width: 100px;
+        top: 70%;
+        right:5px;
+    }
+    </style>
     <title>BADMinecraftPack</title>
 </head>
 
 <body>
     <div class="body">
-		<h1><span style="color:#f00">Be not Afraid of Danger</span> Minecraft Pack</h1>
-		<h2><span style="color:#f00">临危不惧</span>我的世界整合包</h2>
-		<h3><span style="color: #39c5bb;">By ZiChenTEAM</span></h3>
-		<hr>
+        <h1><span style="color:#f00">Be not Afraid of Danger</span> Minecraft Pack</h1>
+        <h2><span style="color:#f00">临危不惧</span>我的世界整合包</h2>
+        <h3><span style="color: #39c5bb;">By ZiChenTEAM</span></h3>
+        <hr>
         <p>简介:这是一个Minecraft的整合包,因为它太小了,只有<span style="color:#f00" id="modNumber"></span>个Mod,因此我们叫它"MinecraftPack",而不是"MinecraftModPack"</p>
         <p>本整合包采用CurseForge格式</p>
         <p>这个整合包极大的增加了Minecraft的难度.</p>
@@ -22,7 +58,7 @@
         <p>如果你认为原版Minecraft的难度太简单了,那就尝试一下这个整合包吧!</p>
         <p><b>不要以为我们采用了CurseForge的格式就发布在CurseForge上,我们并不在CurseForge上发布任何东西!!!(采用CurseForge的格式仅仅是因为文件较小便于储存)</b></p>
         <p><i>作者:<a href="https://zichenstudio.netlify.app/index.html">ZiChenTEAM</a></i></p>
-		<p><i>(如果你喜欢这个整合包请帮助我们获得更多网站流量，这很简单，你只需要刷新一下QwQ)</i></p>
+        <p><i>(如果你喜欢这个整合包请帮助我们获得更多网站流量，这很简单，你只需要刷新一下QwQ)</i></p>
 
         <hr>
         <ul>
@@ -36,13 +72,13 @@
             <li><a href="#jq">技巧</a></li>
             <li><a href="#gxh">个性化</a></li>
             <li><a href="#ywt">有问题?</a></li>
-			<li><a href="#yqlj">友情链接</a></li>
+            <li><a href="#yqlj">友情链接</a></li>
         </ul>
         <hr>
         <h3 id="js">介绍</h3>
         <p>这个整合包叫做<span style="color: #f00;">"临危不惧"</span>,英文是<span style="color: #f00;">"Be not Afraid of Danger"</span>(翻译软件).简写为:"BAD",而bad在英语中有"<b>特别好玩的</b>"的意思,而我们正希望你能愉快的游玩此整合包.</p>
         <p>这个整合包基于Minecraft 1.12.2版本制作,采用Forge API(Forge版本:14.23.5.2859)如果你还没有背会Minecraft 1.12.2的合成表,请前往<a href="https://minecraft.fandom.com/wiki/Minecraft_Wiki" target="_blank">Minecraft Wiki</a>背好,因为在这个整合包里每一秒都是珍贵的!</p>
-        <p>请使用<b><a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">Java JDK 8</a></b>运行此整合包,推荐使用<b>64位</b>Java.如果您还没有Java,请点击:<a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">这里</a>,跳转Java的官方网站下载<b><a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">Java JDK 8</a></b>,如果你没有Oracle账号,可以使用<a href="http://www.codebaoku.com/jdk/jdk-oracle-account.html" target="_blank">共享账号</a>(我们并不保证使用共享账号的安全性)</p>
+        <p>请使用<b><a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">Java JDK 8</a></b>运行此整合包,推荐使用<b>64位</b>Java.如果您还没有Java,请点击:<a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">这里</a>,跳转Java的官方网站下载<b><a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">Java JDK 8</a></b></p>
         <hr>
         <h3>Mod列表</h3>
         <ol id="mod">
@@ -60,13 +96,13 @@
             <li>Corpse<a href="https://www.curseforge.com/minecraft/mc-mods/corpse" target="_blank">&#8599;</a></li>
             <li>CreativeCore<a href="https://www.curseforge.com/minecraft/mc-mods/creativecore" target="_blank">&#8599;</a></li>
             <li>Damage Tilt<a href="https://www.curseforge.com/minecraft/mc-mods/damage-tilt" target="_blank">&#8599;</a></li>
-			<li>Electroblob's Wizardry<a href="https://www.curseforge.com/minecraft/mc-mods/electroblobs-wizardry" target="_blank">&#8599;</a></li>
+            <li>Electroblob's Wizardry<a href="https://www.curseforge.com/minecraft/mc-mods/electroblobs-wizardry" target="_blank">&#8599;</a></li>
             <li>EnhancedVisuals<a href="https://www.curseforge.com/minecraft/mc-mods/enhancedvisuals" target="_blank">&#8599;</a></li>
             <li>EpicSiegeMod<a href="https://www.curseforge.com/minecraft/mc-mods/epic-siege-mod" target="_blank">&#8599;</a></li>
             <li>FastFurnace<a href="https://www.curseforge.com/minecraft/mc-mods/fastfurnace" target="_blank">&#8599;</a></li>
             <li>FastWorkbench<a href="https://www.curseforge.com/minecraft/mc-mods/fastworkbench" target="_blank">&#8599;</a></li>
             <li>Foamfix<a href="https://www.curseforge.com/minecraft/mc-mods/foamfix-optimization-mod" target="_blank">&#8599;</a></li>
-			<li>GooglyEyes<a href="https://www.curseforge.com/minecraft/mc-mods/googlyeyes" target="_blank">&#8599;</a></li>
+            <li>GooglyEyes<a href="https://www.curseforge.com/minecraft/mc-mods/googlyeyes" target="_blank">&#8599;</a></li>
             <li>Humbling Bundle<a href="https://www.curseforge.com/minecraft/mc-mods/humbling-bundle" target="_blank">&#8599;</a></li>
             <li>Hwyla<a href="https://www.curseforge.com/minecraft/mc-mods/hwyla" target="_blank">&#8599;</a></li>
             <li>iChunUtil<a href="https://www.curseforge.com/minecraft/mc-mods/ichunutil" target="_blank">&#8599;</a></li>
@@ -112,14 +148,12 @@
         <hr>
         <h3 id="xz">下载</h3>
         <ul>
-            <li><a href="./web/download.html">下载:整合包</a>(Github Releases)</li>
-            <li><a href="./web/download/New World.zip">下载:难度适中的存档(钻石大陆)</a>(本站)</li>
+            <li><a href="https://github.com/ZiChenStudio/BADmcpack/releases">下载:整合包</a>(Github Releases)</li>
         </ul>
         <p>下载注意:此整合包使用CurseForge制作,推荐使用CurseForge安装并游玩.也可以使用第三方启动器(包括但不限于:<a href="https://hmcl.huangyuhui.net/download/" target="_blank">HMCL</a>,<a href="https://afdian.net/a/LTCat" target="_blank">PCL2,均不保证链接永久有效)</p>
-        <p><a href="./use.html" target="_blank">下载后如何使用?</a></p>
         <hr>
         <h3 id="jt">游戏截图</h3>
-		<p><b>此图片仅代表截图当时的整合包内容!</b></p>
+        <p><b>此图片仅代表截图当时的整合包内容!</b></p>
         <div class="jt">
             <img src="./img/ta.webp" width="100%">
             <p>&#8593;那座高塔&#8593;</p>
@@ -192,7 +226,7 @@
         <hr>
         <h3 id="gxh">个性化</h3>
         <p>如果你讨厌前期的发育和刷怪,只想要挑战末影龙等Boss.请前往<a href="#xz">下载</a>点击"<span style="color: #f00;">下载:难度适中的存档(钻石大陆)</span>"来下载我(原作者)自己的制作的钻石大陆存档,目前支持v0.71及以上版本.(已废止)</p>
-		<hr>
+        <hr>
         <p>如果你喜欢这个整合包,请前往<a href="https://github.com/ZiChenStudio/BADmcpack" target="_blank">Github</a>给这个项目一个Star:D</p>
         <hr>
         <h3 id="ywt">有问题?</h3>
@@ -202,12 +236,12 @@
         <p>注意事项: 请更新到最新版本,而且发现<span style="color: #f00;">问题仍在</span>,再进行反馈</p>
         <p>把我的整合包发布到其他平台?请查看<a href="https://github.com/ZiChenStudio/BADmcpack/issues/1" target="_blank">Github ISSUE #1</a></p>
         <hr>
-		<h3 id="yqlj">友情链接</h3>
-		<ul>
-			<li><a href="https://zichenstudio.netlify.app/" target="_blank">子沉工作室</a></li>
-			<li><a href="https://github.com/" target="_blank">Github</a></li>
-			<li><a href="https://smms.app/" target="_blank">sm.ms</a></li>
-		</ul>
+        <h3 id="yqlj">友情链接</h3>
+        <ul>
+            <li><a href="https://zichenstudio.netlify.app/" target="_blank">子沉工作室</a></li>
+            <li><a href="https://github.com/" target="_blank">Github</a></li>
+            <li><a href="https://smms.app/" target="_blank">sm.ms</a></li>
+        </ul>
         <h1><b><span style="color: #f00;">如果我们的行为侵害了您的合法权益,请前往<a href="https://github.com/ZiChenStudio/BADmcpack/issues" target="_blank">Github Issue</a>通知我们,我们会立刻删除并公开道歉!!</span></b></h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <p>网页制作:<a href="https://pillarzcs.netlify.app/" target="_blank">Pillar</a>
