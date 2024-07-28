@@ -88,26 +88,10 @@ By [**imoutopia**](https://github.com/zichenstudio)
 
 ### 游戏截图
 
-*此处已长期未更新*
-
 <details>
   <summary>点击展开查看图片</summary>
 
-  ![ta.webp](./img/ta.webp)
-
-  ![chicken.webp](./img/chicken.webp)
-
-  ![chickenboom.webp](./img/chickenboom.webp)
-
-  ![night0.webp](./img/night0.webp)
-
-  ![night1.webp](./img/night1.webp)
-
-  ![night2.webp](./img/night2.webp)
-
-  ![die1.webp](./img/die1.webp)
-
-  ![day.webp](./img/day.webp)
+  ![有1000多点血量的女巫](./img/1000hp.webp)
 
 </details>
 
